@@ -16,6 +16,18 @@ public class Person {
 	private String age;
 	private String gender;
 	/**
+	 * @param string
+	 * @param string2
+	 * @param string3
+	 */
+	public Person(String string, String string2, String string3) {
+		// TODO Auto-generated constructor stub
+		
+		this.name=string;
+		this.age=string2;
+		this.gender=string3;
+	}
+	/**
 	 * @return the name
 	 */
 	public String getName() {
