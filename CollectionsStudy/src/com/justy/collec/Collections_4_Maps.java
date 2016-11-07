@@ -13,6 +13,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.stream.Collectors;
+
+import com.sun.org.apache.xalan.internal.xsltc.runtime.Hashtable;
+
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -64,6 +68,22 @@ public class Collections_4_Maps {
 		listFilter.addAll(intList);
 		System.out.println("===SetList");
 		listFilter.forEach(System.out::println);
+		
+		java.util.Hashtable<Integer, String>hashVals=new java.util.Hashtable<Integer, String>();
+		
+		hashVals.put(11,"Justin");
+		hashVals.put(10,"Justin");
+		hashVals.put(2, "Justin");
+		hashVals.put(21,"Justin");
+		hashVals.put(22,"Justin");
+		hashVals.put(12,"Justin");
+		
+		System.out.println();
+		
+		System.out.println(
+		hashVals.entrySet().stream()
+		.filter(e->e.getKey()==11)
+		.collect(Collectors.toList()));
 		
 		
 		
