@@ -15,8 +15,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
-import com.sun.org.apache.xalan.internal.xsltc.runtime.Hashtable;
-
 import java.util.Set;
 import java.util.TreeSet;
 
